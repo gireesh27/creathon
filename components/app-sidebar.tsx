@@ -116,15 +116,15 @@ export function AppSidebar() {
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           >
             {theme === "dark" ? (
-              <>
-                <SunIcon className="mr-2 h-4 w-4" />
-                Light Mode
-              </>
+              <div className="flex flex-row gap-2 sm:gap-4 lg:gap-6">
+                <SunIcon  />
+                <p>Light Mode</p>
+              </div>
             ) : (
-              <>
-                <MoonIcon className="mr-2 h-4 w-4" />
-                Dark Mode
-              </>
+              <div className="flex flex-row gap-2 sm:gap-4 lg:gap-6" >
+                <MoonIcon />
+                <p>Dark Mode</p>
+              </div>
             )}
           </Button>
           <div className="flex items-center gap-3">
